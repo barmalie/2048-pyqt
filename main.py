@@ -2,14 +2,13 @@ import sys
 import random
 
 import math
-from PyQt5.QtWidgets import (QApplication, QWidget, QToolTip,
-                             QPushButton, QMessageBox, QDesktopWidget,
-                             QLabel, QLineEdit, QTextEdit, QGridLayout, QInputDialog)
-from PyQt5.QtGui import QIcon, QPainter, QBrush, QColor, QFont, QPixmap
+from PyQt5.QtWidgets import (QApplication, QWidget, QMessageBox, QDesktopWidget,
+                             QLabel, QInputDialog)
+from PyQt5.QtGui import QIcon
 from PyQt5.QtCore import Qt
 
 
-class board:
+class board():
 
     def __init__(self, x=4):
 
@@ -27,7 +26,6 @@ class board:
             for j in range(self.x):
                 if (self.value[i][j] > maxim):
                     maxim = self.value[i][j]
-
         return maxim
 
     def calculator(self, direc):
