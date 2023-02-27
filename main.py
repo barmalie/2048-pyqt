@@ -204,7 +204,6 @@ class ui(QWidget):
                 lb[i][j].setAlignment(Qt.AlignCenter)
         return lb
 
-    # удалить прикрепленные этикетки с окна
     def remove_label(self):
         for i in range(self.x):
             for j in range(self.x):
